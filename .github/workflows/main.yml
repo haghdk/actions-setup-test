@@ -1,6 +1,6 @@
 name: Main workflow
 on: push
-evn:
+env:
   docker_username: ${{ github.actor }} 
   docker_password: ${{ secrets.GITHUB_TOKEN }} #Nees to be set to be made available to the workflow
   GIT_COMMIT: ${{ github.sha }}
